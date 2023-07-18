@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.dashboard-btn{
+    -fx-background-color:white;
+    -fx-text-fill:#0DA9F1;
+}
+.dashboard-btn:hover{
+    -fx-background-color:white;
+    -fx-text-fill:#0DA9F1;
+    -fx-cursor:hand;
+}

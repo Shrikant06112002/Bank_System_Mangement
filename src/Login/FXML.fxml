@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.FXMLController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="600.0" prefWidth="350.0" styleClass="login-sidebar" stylesheets="@fxml.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/pngwing.com.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="278.0" text="AXIS BANK" textFill="#fafafa">
+               <font>
+                  <Font name="Impact" size="54.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="339.0" text="Client Software" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="563.0" text="All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane fx:id="main_area" layoutX="350.0" prefHeight="600.0" prefWidth="450.0" styleClass="login-main" stylesheets="@fxml.css">
+         <children>
+            <Label layoutX="61.0" layoutY="61.0" text="WELCOME" textFill="#595858">
+               <font>
+                  <Font name="Impact" size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="114.0" text="Login below to acess your account">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="accountno" layoutX="75.0" layoutY="176.0" prefHeight="30.0" prefWidth="300.0" promptText="Account No">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pin" layoutX="75.0" layoutY="260.0" prefHeight="30.0" prefWidth="300.0" promptText="PIN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="282.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#forgotPassword" styleClass="login-forget" stylesheets="@fxml.css" text="Forgot Password?">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="125.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#loginAccount" prefHeight="40.0" prefWidth="200.0" styleClass="login-button" stylesheets="@fxml.css" text="Login">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="100.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#createAccount" prefHeight="40.0" prefWidth="250.0" styleClass="login-button" stylesheets="@fxml.css" text="Create New Account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="407.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#closeApp" text="X">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="75.0" layoutY="151.0" text="Account No">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="233.0" text="PIN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+<!--            <Label layoutX="213.0" layoutY="424.0" text="OR" />
+            <Icon content="PERSON" layoutX="39.0" layoutY="178.0" styleClass="login-icon" />
+            <Icon content="LOCK" layoutX="39.0" layoutY="243.0" styleClass="login-icon" />
+            <Icon content="PERSON" layoutX="176.0" layoutY="382.0" styleClass="login-icon" />
+            <Icon content="EDIT" layoutX="131.0" layoutY="465.0" styleClass="login-icon" />-->
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

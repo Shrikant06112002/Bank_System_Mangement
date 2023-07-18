@@ -1,0 +1,47 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.login-sidebar{
+    -fx-background-color:#007ff5;
+}
+.login-main{
+    -fx-background-color:white;
+}
+.login-forget{
+    -fx-background-color:white;
+    -fx-text-fill:grey;
+    -fx-cursor:hand;
+}
+.login-button{
+    -fx-text-fill:#444444;
+    -fx-background-radius:50px;
+    -fx-background-color:white;
+    -fx-border-radius:50px;
+    -fx-border-color:#444444;
+    -fx-border-style: solid;
+    -fx-border-width:1px;
+}
+.login-button:hover{
+    -fx-text-fill:white;
+    -fx-background-radius:50px;
+    -fx-background-color:#0DA9F1;
+    -fx-border-radius:50px;
+    -fx-border-color:#0DA9F1;
+    -fx-border-style: solid;
+    -fx-border-width:1px;
+    -fx-cursor:hand;
+}
+.login-icon{
+    -fx-fill:#444444;
+}
+.login-button:hover.login-icon{
+    -fx-fill:white;
+}
+.login-close-button:hover{
+    -fx-fill:red;
+    
+}

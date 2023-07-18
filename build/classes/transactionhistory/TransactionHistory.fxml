@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transactionhistory.TransactionHistoryController">
+   <content>
+      <AnchorPane id="AnchorPane" fx:id="dashboard_main" prefHeight="506.0" prefWidth="760.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@../withdraw/withdrawamount.css" />
+         </stylesheets>
+         <children>
+            <TabPane layoutX="7.0" layoutY="7.0" prefHeight="506.0" prefWidth="760.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Withdraw History">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="760.0">
+                           <children>
+                              <TableView fx:id="withdraw_table" prefHeight="454.0" prefWidth="742.0">
+                                <columns>
+                                  <TableColumn fx:id="withdraw_accountno" prefWidth="151.99997425079346" text="Account No" />
+                                  <TableColumn fx:id="withdraw_amount" prefWidth="165.99998474121094" text="Withdraw Amount" />
+                                    <TableColumn fx:id="withdraw_remainingamount" prefWidth="178.0" text="Remaining  Amount" />
+                                    <TableColumn fx:id="withdraw_date" minWidth="0.0" prefWidth="131.33334350585938" text="Date" />
+                                    <TableColumn fx:id="withdraw_time" minWidth="5.33331298828125" prefWidth="112.66668701171875" text="Time" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Deposit History">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="deposit_table" layoutX="14.0" layoutY="14.0" prefHeight="441.0" prefWidth="725.0">
+                                <columns>
+                                  <TableColumn fx:id="deposit_accountno" prefWidth="164.00003623962402" text="Account No" />
+                                  <TableColumn fx:id="deposit_amount" prefWidth="128.66661071777344" text="Deposit Amount" />
+                                    <TableColumn fx:id="deposit_remainingamount" prefWidth="154.66668701171875" text="New  Amount" />
+                                    <TableColumn fx:id="deposit_date" prefWidth="137.33346557617188" text="Date" />
+                                    <TableColumn fx:id="deposit_time" prefWidth="141.333251953125" text="Time" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Transfer Account History">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="transfer_table" layoutX="4.0" layoutY="6.0" prefHeight="448.0" prefWidth="735.0">
+                                <columns>
+                                  <TableColumn fx:id="transfer_accountno" prefWidth="133.33334827423096" text="Account No" />
+                                  <TableColumn fx:id="transfer_amount" prefWidth="136.66661071777344" text="Amount" />
+                                    <TableColumn fx:id="transfer_remainingamount" prefWidth="160.0" text="SendTo" />
+                                    <TableColumn fx:id="transfer_date" prefWidth="165.99996948242188" text="Date" />
+                                    <TableColumn fx:id="transfer_time" prefWidth="144.0" text="Time" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Money Recieved History">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="recieve_table" layoutX="14.0" layoutY="14.0" prefHeight="444.0" prefWidth="724.0">
+                                <columns>
+                                  <TableColumn fx:id="recieve_accountno" prefWidth="149.33334922790527" text="Account No" />
+                                  <TableColumn fx:id="recieve_amount" prefWidth="142.66661071777344" text="Amount" />
+                                    <TableColumn fx:id="recieve_remainingamount" prefWidth="147.3333740234375" text="Revieved From" />
+                                    <TableColumn fx:id="recieve_date" prefWidth="140.66671752929688" text="Date" />
+                                    <TableColumn fx:id="recieve_time" prefWidth="144.6666259765625" text="Time" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

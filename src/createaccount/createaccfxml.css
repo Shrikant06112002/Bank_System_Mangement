@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.field-decoration{
+    -fx-border-radius:70px;
+    -fx-background-radius:70px;
+}
